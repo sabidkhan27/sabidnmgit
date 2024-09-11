@@ -1,0 +1,95 @@
+<!DOCTYP html>
+<html>
+<head><title>test</title>
+</head>
+<body 
+style
+="background:gold">
+<center>
+<style type="text/css">
+input
+{
+height:50px;
+width:260px;
+border-color:blue;
+border-radius:30px;
+outline-color:blue;
+background:gold;
+color:green;
+font-size:20px;
+font-style:italic;
+font-family:serif;
+font-weight:bold; 
+}
+</style><div 
+style="background:red;
+       height:690;
+	   width:385;
+	   border-radius:20px">
+<br> 
+<form 
+style="background:white;
+       border-radius:20px;
+       height:650px;
+       width:370px;
+       color:blue;
+       font-weight:bold;
+       font-size:18px;
+       font-family:serif">
+<level 
+style="
+font-size:100px;
+color:blue;
+font-family:serif;">
+🇧🇩
+</level><br><br>
+Name<br>  <input id="name" type="name"
+ placeholder="Inter Your Name"></input>
+ <br><br>
+Phone<br> <input id="number" type="number"
+ placeholder="Inter your Phone Number"></input>
+ <br><br>
+Email<br> <input id="email" type="email"
+ placeholder="Your Email Address"></input><br><br>
+Password<br> <input 
+id="password" 
+type="password" 
+placeholder="New Password"></input><br><br>
+Conferm-paasword<br> <input id="con-pass"type="password"
+ placeholder="Conferm-Password"></input>
+<br><br>
+<button onclick=fun() style="width:310px;
+height:40px;
+background:blue;
+font-size:25px;
+color:gold;
+font-weight:bold;
+font-family:serif;
+border-radius:20px;
+border:none">
+Submit
+</button><br><br></form></div>
+</center>
+<script type="text/javascript">
+function fun()
+{
+var n=document.getElementById("name").value;
+var p=document.getElementById("number").value;
+var e=document.getElementById("email").value;
+var pa=document.getElementById("password").value; 
+var cp=document.getElementById("con-pass").value;
+if(p.length==11)
+{if (pa.length>=8)
+{
+if(pa==cp)
+{alert("Sinup successful ");}
+else
+{alert("password not match");} }
+ else {alert("Minimums 8 carecter");}
+}else{alert("Only 11 Carecter Number");}
+
+
+}
+</script>
+</body>
+</html>
